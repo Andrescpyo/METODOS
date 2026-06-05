@@ -1,8 +1,37 @@
 # =============================================================
-#  INTERFAZ GRÁFICA — MÉTODO DEL PUNTO FIJO
+#  INTERFAZ GRÁFICA — MÉTODO DEL PUNTO FIJO (LEGACY v1.x)
 #  Métodos Numéricos — Universidad Distrital 2026-1
 #  Archivo: METODOS/Interfaz_grafica.py
 # =============================================================
+"""
+Legacy GUI Module for Fixed-Point Method (v1.x).
+
+DEPRECATED: Use main_app.py for the new unified interface (v2.0+).
+
+This module provides a tabbed GUI interface with automatic graph 
+generation. It is maintained for backwards compatibility but should 
+not be used for new features.
+
+Architecture:
+    - 3-tab Tkinter interface (Entrada, Pasos, Resultado)
+    - Automatic graph generation during execution
+    - Linear workflow from input to visualization
+    
+Migration Path:
+    Old: python Punto_Fijo_v2.py → Punto_Fijo.py → Interfaz_grafica.py
+    New: python Punto_Fijo_v2.py → main_app.py (unified interface)
+
+Dependencies:
+    - tkinter: GUI framework
+    - numpy: Numerical computations
+    - matplotlib: Visualization
+
+Author: Andrés Cerdas Padilla
+Institution: Universidad Distrital Francisco José de Caldas
+Year: 2026
+Status: Legacy (maintained for compatibility)
+"""
+
 import tkinter as tk
 from tkinter import ttk, messagebox, scrolledtext
 import numpy as np
